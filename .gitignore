@@ -1,0 +1,54 @@
+# ---- Secrets (חייב להיות ראשון) ----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+service-account*.json
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+.coverage.*
+dist/
+build/
+
+# ---- Node ----
+node_modules/
+npm-debug.log*
+.parcel-cache/
+frontend/dist/
+
+# ---- Supabase ----
+.supabase/
+supabase/.temp/
+supabase/.branches/
+
+# ---- ML artifacts ----
+*.pkl
+*.joblib
+models/*.bin
+mlruns/
+
+# ---- Tooling ----
+.playwright/
+playwright-report/
+test-results/
+.lighthouseci/
+
+# ---- OS / IDE ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
